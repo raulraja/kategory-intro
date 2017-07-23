@@ -8,7 +8,7 @@
 ```
 - DataTypes:  (Option, Try, Either, EitherT, Free,...)
 - Typeclasses : (Functor, applicative, Monad, ...)
-- Utils: (comprehensiones monadicas, applicative builder,...)
+- Utils: (monadic comprehensions, applicative builder,...)
 ```
 
 ---
@@ -169,9 +169,9 @@ List(Future(1), Future(2), Future(3)).sequence() // Future(List(1,2,3))
 # 3. Common FP Typeclasses
 
 ```
-(Reduccion) : Semigroup -> Monoid
-(Transformacion) : Functor -> Applicative -> Monad
-(Iteracion) : Foldable -> Traversable
+(Combine values) : Semigroup -> Monoid
+(Transform) : Functor -> Applicative -> Monad
+(Iteration) : Foldable -> Traversable
 ```
 
 ---
@@ -240,7 +240,7 @@ attempt<Try.F, Int>("x".toInt()) // Failure(IllegalArgumentException)
 
 >> Free / Interpreters
 
-Deserves it's own session. It allows to decouple program declaration from interpretation.
+Deserves its own session. It allows to decouple program declaration from interpretation.
 
 ---
 
